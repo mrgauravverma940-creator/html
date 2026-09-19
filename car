@@ -1,0 +1,18 @@
+lane = 1 
+score = 0  
+speed = 0
+
+key = pygame.key.get_pressed()
+if key[pygame.K_LEFT] and lane > 0:
+    lane -= 1
+if key[pygame.K_RIGHT] and lane < 2:
+    lane += 1
+    player.x = lanes [lane]
+
+    for car in cars:
+        car.y += speed
+        if player.colliderect(boost_pad):
+            boost = True
+
+            speed = 9 
+            score +=int(speed) 
