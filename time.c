@@ -1,4 +1,4 @@
-nt main() {
+int main() {
 
    int h ;
    int m ;
